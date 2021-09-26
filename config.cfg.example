@@ -1,2 +1,5 @@
 [NodeURLs]
 eth_archive = https://speedy-nodes-nyc.moralis.io/<your moralis ID>/eth/mainnet/archive
+pol_archive = https://speedy-nodes-nyc.moralis.io/<your moralis ID>/polygon/mainnet/archive
+pol_mainnet = https://speedy-nodes-nyc.moralis.io/<your moralis ID>/polygon/mainnet
+arb_mainnet = https://speedy-nodes-nyc.moralis.io/<your moralis ID>/arbitrum/mainnet
