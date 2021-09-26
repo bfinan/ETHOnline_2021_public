@@ -2,9 +2,24 @@
 
 For the ETHOnline 2021 Hackathon we develop a laye 2 alpha strategy in the form of a yield optimization engine running on layer 2 connecting different layer 2 systems together. Specifically, we focus in this hack on optimizing LPing in Curve pools on Polygon and Arbitrum.
 
+## What does the code do?
+
+At a summary level, the code does this:
+
+  + Download all exchange events that occurred in the polygon (POL) and arbitrum (ARB) pools.
+  + Compute the equivalent USD volume from those exchanges.
+  + Compute the delta b/w POL and ARB to get an idea of where the current exchanges are most in volume.
+  + Plot the distribution change over time including moments.
+
+Based on this data we are building a yield optimizing bot.
+
 ## Developers
 
-Rename the config.cfg.example into "config.cfg", then put your moralis ID and run the various `stepX<...>.py` scripts one after the other and change inputs as needed.
+Prerequisites:
+
+  + The scanner module included in the root repo is compiled for MacOS only right now. If you need it compiled for another OS, please reach out to Jesper.
+
+How to run the code: Rename the config.cfg.example into "config.cfg", then put your moralis ID and run the various `stepX<...>.py` scripts one after the other and change inputs as needed. The first step is to download all the transactions. You will see a progress bar, but running this the first time might take a good amount of time to finish.
 
 Reach out to Jesper on our Discord server at https://discord.gg/mC86ZysZ if you get stuck!
 
