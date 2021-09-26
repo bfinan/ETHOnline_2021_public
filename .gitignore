@@ -1,0 +1,9 @@
+.DS_Store
+config.cfg
+.idea/
+**/__pycache__
+data/*
+data/
+scanner/*.py
+*.png
+*.json
