@@ -5,5 +5,6 @@ config.cfg
 data/*
 data/
 scanner/*.py
+!scanner/__init__.py
 *.png
 *.json
