@@ -28,27 +28,27 @@ logger = logging.getLogger(__name__)
 
 DATAPATH = "data"
 
-# # =====================
-# # (***) This is the Curve pool on Polygon:
-# # this contract: https://polygon.curve.fi/atricrypto3/ running on Polygon, so need polygon node
-# POOL_ADDRESS = "0x92215849c439E1f8612b6646060B4E3E5ef822cC"
-# NODE_TO_USE = "pol_archive"  # see config.cfg
-# ABI_EXCHANGE = """[{"name":"TokenExchange","inputs":[{"name":"buyer","type":"address","indexed":true},{"name":"sold_id","type":"uint256","indexed":false},{"name":"tokens_sold","type":"uint256","indexed":false},{"name":"bought_id","type":"uint256","indexed":false},{"name":"tokens_bought","type":"uint256","indexed":false}],"anonymous":false,"type":"event"}]
-# """
-# POA_CHAIN = True
-# FNAME = "pol_pool_exchanges"
-# # =====================
-
 # =====================
-# (***) This is the Curve pool on Arbitrum:
-# this contract: https://arbitrum.curve.fi/tricrypto/ running on Arbitrum, so need arb node
-POOL_ADDRESS = "0x960ea3e3C7FB317332d990873d354E18d7645590"
-NODE_TO_USE = "arb_mainnet"  # see config.cfg
+# (***) This is the Curve pool on Polygon:
+# this contract: https://polygon.curve.fi/atricrypto3/ running on Polygon, so need polygon node
+POOL_ADDRESS = "0x92215849c439E1f8612b6646060B4E3E5ef822cC"
+NODE_TO_USE = "pol_archive"  # see config.cfg
 ABI_EXCHANGE = """[{"name":"TokenExchange","inputs":[{"name":"buyer","type":"address","indexed":true},{"name":"sold_id","type":"uint256","indexed":false},{"name":"tokens_sold","type":"uint256","indexed":false},{"name":"bought_id","type":"uint256","indexed":false},{"name":"tokens_bought","type":"uint256","indexed":false}],"anonymous":false,"type":"event"}]
 """
-POA_CHAIN = False
-FNAME = "arb_pool_exchanges"
+POA_CHAIN = True
+FNAME = "pol_pool_exchanges"
 # =====================
+
+# # =====================
+# # (***) This is the Curve pool on Arbitrum:
+# # this contract: https://arbitrum.curve.fi/tricrypto/ running on Arbitrum, so need arb node
+# POOL_ADDRESS = "0x960ea3e3C7FB317332d990873d354E18d7645590"
+# NODE_TO_USE = "arb_mainnet"  # see config.cfg
+# ABI_EXCHANGE = """[{"name":"TokenExchange","inputs":[{"name":"buyer","type":"address","indexed":true},{"name":"sold_id","type":"uint256","indexed":false},{"name":"tokens_sold","type":"uint256","indexed":false},{"name":"bought_id","type":"uint256","indexed":false},{"name":"tokens_bought","type":"uint256","indexed":false}],"anonymous":false,"type":"event"}]
+# """
+# POA_CHAIN = False
+# FNAME = "arb_pool_exchanges"
+# # =====================
 
 
 class ExchangeJSONifiedState(JSONifiedState):

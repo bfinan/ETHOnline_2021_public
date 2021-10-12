@@ -13,6 +13,10 @@ At a summary level, the code does this:
 
 Based on this data we are building a yield optimizing bot.
 
+### How to Run
+
+Rename the config.cfg.example into "config.cfg", then put your moralis ID and run the various stepX<...>.py scripts one after the other and change inputs as needed.
+
 ## Developers
 
 Prerequisites:
@@ -25,10 +29,31 @@ Reach out to Jesper on our Discord server at https://discord.gg/mC86ZysZ if you 
 
 # What is Composable Finance?
 
-Link: https://www.composable.finance/
-
+We partnered with Composable Finance: https://www.composable.finance/
 Composable Finance is a cross-chain and cross-layer interoperability platform. It serves as a hyper-liquidity infrastructure layer for DeFi assets, powered by Layer 2 Ethereum and Polkadot.
+
+How? We used their Mosaic bridge (which in turn uses their SDK): https://mosaic.composable.finance
 
 The lack of interoperability between multiple blockchains and layers creates fragmentation and disparity in the ecosystem. Developers are very restricted in what they can build with siloed infrastructures, and users are forced to navigate complicated and lengthy processes if they want to utilize multiple chains or layers.
 Composable Finance is working on a suite of different products to establish cross-chain and cross-layer interoperability that will reduce the barriers for DeFi developers and remove the unnecessary complexity for the users.
 Our development roadmap has two phases. In the first phase, we will focus on multi-layer (L2/L2) interoperability, bridging the gap between different Ethereum Layer 2 implementations and sidechains. In the second phase, we will launch our parachain, Picasso. It has been developed over several months to enable a complete DeFi ecosystem on Polkadot. This will be accomplished through a parachain with built-in, customizable pallets for each of the key DeFi primitives as well as those more advanced secondary and tertiary features, enabling the development of seamless, interoperable dApps.
+
+We want to thank the development team at Composable for guidance and help and we greatly enjoyed using their groundbreaking technology!
+
+## How to run the code
+
+The flow follows the "stepX_<...>.py" files from getting the data to analyzing it.
+Currently, the scanner is taken from the Advanced Blockchain Research Development Kit (RDK) and is compiled for Mac OS.
+If you want it compiled for other platforms please reach out to the point of contact (listed below).
+
+## Point of Contact
+
+Any questions? Please reach out to jesper@advancedblockchain.com
+
+## Authors
+
+  + Jesper Kristensen | Advanced Blockchain
+  + Jason Chai
+  + Brendan
+  + Liam Beckman
+  + Tobe

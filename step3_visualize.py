@@ -22,8 +22,11 @@ sns.set_theme()
 DATAPATH = "data"
 
 # ======================
-FILE = "arb_post_2021-09-24_22_57_19.pkl"
+# FILE = "arb_post_2021-09-24_22_57_19.pkl"
 # FILE = "pol_post_2021-09-24_23_23_50.pkl"
+
+FILE = "arb_post_2021-09-26_23_30_15.pkl"
+# FILE = "pol_post_2021-09-26_23_10_09.pkl"
 # ======================
 
 FILE = os.path.join(DATAPATH, FILE)
@@ -72,10 +75,11 @@ x = [datetime.datetime.strptime(xx, "%m-%d-%YT%H:%M:%S") for xx in df.index]
 
 df["time"] = x
 df["range"] = range(len(df))
-y = df[FILENAME_OUT.upper()].values
 
-timegrid_ix = list(range(len(timegrid)))
-values = np.zeros(len(timegrid))
+y = df[FILENAME_OUT.upper() + "_LP_REV"].values
+
+timegrid_ix = list(range(len(timegrid) + 1))
+values = np.zeros(len(timegrid) + 1)
 for xel, yel in zip(x, y):
     pos = bisect.bisect_left(timegrid, xel)
     if xel.second < 15:
